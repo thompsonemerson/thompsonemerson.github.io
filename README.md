@@ -1,2 +1,2 @@
-# thompsonemerson.github.io
-Personal Page
+# Personal Page
+thompsonemerson.github.io
