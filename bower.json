@@ -1,0 +1,8 @@
+{
+  "name": "thompsonemerson.github.io",
+  "private": "true",
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "typed.js": "^1.1.1"
+  }
+}
