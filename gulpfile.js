@@ -34,7 +34,7 @@ gulp.paths = gulp.paths[gulp.config.format];
 
 // Tasks
 // --------------------------------------------------------- //
-requireDir('gulp_tasks');
+requireDir('.gulp');
 
 
 // Watch
