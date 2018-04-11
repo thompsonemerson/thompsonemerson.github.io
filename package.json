@@ -14,7 +14,6 @@
     "css"
   ],
   "scripts": {
-    "preinstall": "npm install -g bower",
     "postinstall": "bower install",
     "start": "gulp",
     "stop": "rm -rf node_modules",
