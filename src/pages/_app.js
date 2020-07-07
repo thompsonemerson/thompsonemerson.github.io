@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
         :root {
           --color-dark: #090f29;
           --color-neon: #58fda1;
-          --color-grey: #5f5f5f;
+          --color-grey: #d6d6d6;
 
           --font-silka: 'Silka', sans-serif;
         }
