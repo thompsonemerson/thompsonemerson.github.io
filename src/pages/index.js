@@ -40,7 +40,7 @@ export default function Home() {
       <main onClick={() => setClicks(clicks + 1)}>
         <Header />
         <div>
-          <img src="/images/emoji-thompson.min.png" alt="desenho de um personagem de frente ao computador"/>
+          <img src={`/images/emoji-thompson-${key}.png`} alt="desenho de um personagem de frente ao computador"/>
 
           <TextSlider />
         </div>
