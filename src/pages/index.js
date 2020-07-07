@@ -8,7 +8,7 @@ export default function Home() {
       <main>
         <Header />
         <div>
-          <img src="/images/emoji-thompson.min.png" alt="desenho de um personagem alegre de frente ao computador, piscando um olho e com um sorriso no rosto"/>
+          <img src="/images/emoji-thompson.min.png" alt="desenho de um personagem de frente ao computador"/>
 
           <TextSlider />
         </div>
