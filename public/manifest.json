@@ -1,0 +1,21 @@
+{
+  "name": "Emerson Thompson | Full-Stack Developer",
+  "short_name": "Emerson Thompson",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#090f29",
+  "description": "Developer Web & Mobile, A speaker fond of technology",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#090f29"
+}

@@ -6,6 +6,9 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
         <meta name="theme-color" content="#090f29"></meta>
+        <link rel="shortcut icon" href="/images/icon-192.png" />
+        <link rel="apple-touch-icon" href="/images/icon-192.png" />
+        <link rel="manifest" href="/manifest.json" />
 
         <title>Emerson Thompson | Full-Stack Developer</title>
         <meta name="description" content="Developer Web & Mobile, A speaker fond of technology"/>

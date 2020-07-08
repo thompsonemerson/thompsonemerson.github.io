@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import TextSlider from '../components/TextSlider'
 
 export default function Home() {
-  const [key, setKey] = useState(1)
+  const [key, setKey] = useState(null)
   const [clicks, setClicks] = useState(0)
 
   const setEmoji = (number = false) => {
@@ -39,11 +39,12 @@ export default function Home() {
     <>
       <main onClick={() => setClicks(clicks + 1)}>
         <Header />
-        <div>
-          <img src={`/images/emoji-thompson-${key}.png`} alt="desenho de um personagem de frente ao computador"/>
 
+        <div>
+          {key && <img src={`/images/emoji-thompson-${key}.png`} alt="desenho de um personagem de frente ao computador"/>}
           <TextSlider />
         </div>
+
         <Footer mouseEnter={mouseEnterLink} mouseLeave={mouseLeaveLink} />
       </main>
 
@@ -60,17 +61,18 @@ export default function Home() {
           user-select: none;
         }
 
-        img {
-          display: block;
-          width: 90px;
-          margin: 0 auto 8px;
-          pointer-events: none;
+        div {
+          width: 100%;
+          text-align: center;
         }
 
-        @media (min-width: 700px) {
-          img {
-            width: 140px;
-          }
+        img {
+          display: block;
+          width: 30vw;
+          min-width: 90px;
+          max-width: 140px;
+          margin: 0 auto 8px;
+          pointer-events: none;
         }
       `}</style>
     </>
