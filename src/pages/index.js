@@ -56,7 +56,7 @@ export default function Home() {
           flex-direction: column;
           height: 100%;
           justify-content: space-between;
-          padding: 16px;
+          padding: 24px;
           user-select: none;
         }
 

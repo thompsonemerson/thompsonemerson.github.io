@@ -37,7 +37,7 @@ export default function PageNotFound() {
           flex-direction: column;
           height: 100%;
           justify-content: center;
-          padding: 16px;
+          padding: 24px;
           user-select: none;
         }
 
