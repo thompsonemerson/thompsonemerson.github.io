@@ -51,7 +51,6 @@ export default function Home() {
       <style jsx>{`
         main {
           align-items: center;
-          background-color: var(--color-dark);
           color: #ffffff;
           display: flex;
           flex-direction: column;

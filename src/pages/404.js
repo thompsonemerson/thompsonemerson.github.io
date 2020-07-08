@@ -32,7 +32,6 @@ export default function PageNotFound() {
       <style jsx>{`
         main {
           align-items: center;
-          background-color: var(--color-dark);
           color: #ffffff;
           display: flex;
           flex-direction: column;

@@ -49,6 +49,7 @@ export default function App({ Component, pageProps }) {
 
         html {
           font-size: 60.5%;
+          background-color: var(--color-dark);
         }
 
         body {
