@@ -12,6 +12,18 @@ export default function App({ Component, pageProps }) {
 
         <title>Emerson Thompson | Full-Stack Developer</title>
         <meta name="description" content="Developer Web & Mobile, A speaker fond of technology"/>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20904103-7" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-20904103-7');
+              `,
+          }}
+        />
       </Head>
 
       <style jsx global>{`
