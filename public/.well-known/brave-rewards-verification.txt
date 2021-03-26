@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: emersonthompson.com.br
+Token: 05b2ba64049d41de81f3f287b5d80225c7d4084d690fa1c52164ff279f1a00ac
