@@ -1,17 +1,19 @@
 import Link from 'next/link'
 
 export default function PageNotFound() {
-  return(
+  return (
     <>
       <main>
-        <img src={`/images/emoji-thompson-6.png`} alt="desenho de um personagem de frente ao computador"/>
+        <img
+          src={`/images/emoji-thompson-6.png`}
+          alt="desenho de um personagem de frente ao computador"
+        />
         <div className="code-area">
-          <span style={{ color: '#777', fontStyle: 'italic'}}>
-            // 404
-          </span>
+          <span className="comment">// 404</span>
           <span>
-            <span style={{ color: '#d65562' }}>if </span>
-            (<span style={{ color: '#4ca8ef'}}>!</span><span style={{ fontStyle: 'italic', color: '#bdbdbd'}}>page</span>)
+            <span style={{ color: '#d65562' }}>if </span>(
+            <span style={{ color: '#4ca8ef' }}>!</span>
+            <span style={{ fontStyle: 'italic', color: '#bdbdbd' }}>page</span>)
             {' {'}
           </span>
           <span>
@@ -22,8 +24,11 @@ export default function PageNotFound() {
               (<span style={{ color: '#a6a61f' }}>'page not found'</span>);
             </span>
             <span style={{ display: 'block' }}>{'}'}</span>
-            <span style={{ color: '#777', fontStyle: 'italic' }}>
-              // <Link href="/"><a>Go home!</a></Link>
+            <span className="comment">
+              //{' '}
+              <Link href="/">
+                <a>Go home!</a>
+              </Link>
             </span>
           </span>
         </div>
@@ -46,12 +51,17 @@ export default function PageNotFound() {
           width: 30vw;
           min-width: 90px;
           max-width: 140px;
-          margin: 0 auto 8px;
+          margin: 0 auto 16px;
           pointer-events: none;
         }
 
+        .comment {
+          color: #777;
+          font-style: italic;
+        }
+
         a {
-          color: #ffffff;
+          color: #777;
         }
 
         .code-area {

@@ -4,16 +4,25 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1"
+        ></meta>
         <meta name="theme-color" content="#090f29"></meta>
         <link rel="shortcut icon" href="/images/icon-192.png" />
         <link rel="apple-touch-icon" href="/images/icon-192.png" />
         <link rel="manifest" href="/manifest.json" />
 
         <title>Emerson Thompson | Full-Stack Developer</title>
-        <meta name="description" content="Developer Web & Mobile, A speaker fond of technology"/>
+        <meta
+          name="description"
+          content="Developer Web & Mobile, A speaker fond of technology"
+        />
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20904103-7" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-20904103-7"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -21,7 +30,7 @@ export default function App({ Component, pageProps }) {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'UA-20904103-7');
-              `,
+              `
           }}
         />
       </Head>

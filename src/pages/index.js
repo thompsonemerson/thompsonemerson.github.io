@@ -1,34 +1,38 @@
 import React, { useEffect, useState } from 'react'
-
-import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 import TextSlider from '../components/TextSlider'
 
 export default function Home() {
-  const [key, setKey] = useState(null)
+  const [imgKey, setImgKey] = useState(null)
   const [clicks, setClicks] = useState(0)
+
+  const mapClicks = {
+    10: 6,
+    20: 7,
+    30: 8,
+    40: 9
+  }
 
   const setEmoji = (number = false) => {
     if (number) {
-      setKey(number)
+      setImgKey(number)
       return
     }
 
     const imgs = [1, 2, 3, 10]
     const rand = Math.round(Math.random() * 3)
 
-    setKey(imgs[rand])
+    setImgKey(imgs[rand])
   }
 
   useEffect(setEmoji, [])
 
   useEffect(() => {
-    if (clicks === 10) setEmoji(6)
-    if (clicks === 20) setEmoji(7)
-    if (clicks === 30) setEmoji(8)
-    if (clicks === 40) {
-      setEmoji(9)
-      setClicks(0)
+    if (mapClicks[clicks]) {
+      setEmoji(mapClicks[clicks])
+
+      if (clicks === 40) setClicks(0)
     }
   }, [clicks])
 
@@ -41,7 +45,12 @@ export default function Home() {
         <Header />
 
         <div>
-          {key && <img src={`/images/emoji-thompson-${key}.png`} alt="desenho de um personagem de frente ao computador"/>}
+          {imgKey && (
+            <img
+              src={`/images/emoji-thompson-${imgKey}.png`}
+              alt="desenho de um personagem de frente ao computador"
+            />
+          )}
           <TextSlider />
         </div>
 

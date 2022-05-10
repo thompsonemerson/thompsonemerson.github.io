@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Typed from 'typed.js'
 
 export default function TextSlider() {
@@ -17,7 +17,9 @@ export default function TextSlider() {
 
   return (
     <>
-      <h2>I'm a <span ref={textRef}></span></h2>
+      <h2>
+        I'm a <span ref={textRef}></span>
+      </h2>
 
       <style jsx>{`
         h2 {

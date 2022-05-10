@@ -1,12 +1,28 @@
 export default function Footer({ mouseEnter, mouseLeave }) {
   return (
     <>
-      <div
-        onMouseEnter={mouseEnter}
-        onMouseLeave={mouseLeave}>
-        <a href="https://github.com/thompsonemerson/" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://codepen.io/thompsonemerson/" target="_blank" rel="noopener">Codepen</a>
-        <a href="https://linkedin.com/in/thompsonemerson/" target="_blank" rel="noopener">Linkedin</a>
+      <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+        <a
+          href="https://github.com/thompsonemerson/"
+          target="_blank"
+          rel="noopener"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://codepen.io/thompsonemerson/"
+          target="_blank"
+          rel="noopener"
+        >
+          Codepen
+        </a>
+        <a
+          href="https://linkedin.com/in/thompsonemerson/"
+          target="_blank"
+          rel="noopener"
+        >
+          Linkedin
+        </a>
       </div>
 
       <style jsx>{`
