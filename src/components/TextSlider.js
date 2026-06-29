@@ -6,7 +6,7 @@ export default function TextSlider() {
 
   useEffect(() => {
     const typed = new Typed(textRef.current, {
-      strings: ['front-end', 'back-end', 'mobile dev', 'speaker'],
+      strings: ['front-end', 'back-end', 'mobile dev', 'AI engineer', 'speaker'],
       cursorChar: '_',
       typeSpeed: 100,
       backSpeed: 60,
