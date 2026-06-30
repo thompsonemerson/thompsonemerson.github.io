@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
-    "start": "next start"
+    "build": "next build",
+    "start": "next start",
+    "vercel-build": "NODE_OPTIONS=--openssl-legacy-provider next build"
   },
   "dependencies": {
     "next": "9.4.4",
